@@ -16,9 +16,9 @@ def plaintext(code)
   while idx < each_char.length
     # check for digits 0-9 number
     if /\d/.match(each_char[idx])
-        targetNum = each_char[idx].to_i + 1
+        target_num = each_char[idx].to_i + 1
         # push to encryption string
-        encryption << each_char[targetNum + idx].to_s
+        encryption << each_char[target_num + idx].to_s
     end
    # move to the next index and repeat
   idx += 1
